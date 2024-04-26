@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="primary-header">
+    <section class="">
+      <nav class="primary-navbar | navbar w-100 position-absolute navbar-expand-md z-2">
+        <div class="container">
+          <a class="navbar-brand" href="#">LOGO</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+            data-bs-theme="dark">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title">LOGO</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Home</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                    Portfolio
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Testimonials</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-light"
+                  aria-current="page"
+                  href="#"
+                  >Home</a
+                >
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link text-light dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Portfolio
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">Testimonials</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">Contact</a>
+              </li>
+            </ul>
+          </div> -->
+        </div>
+      </nav>
+
+      <!-- Hero Section -->
+      <div id="carouselExample" class="carousel slide carousel-fade" style="height: 100vh">
+        <div class="carousel-inner h-100">
+          <div class="carousel-item active h-100">
+            <img src="./images/hero-1.jpg" class="d-block h-100"
+              style="width: 100vw; object-fit: cover; object-position: center" alt="Couple-Picture" />
+            <div class="carousel-caption w-100">
+              <h1 class="display-4 text-dark">
+                Photography for <br />Adventurous Souls & <br />Rebels At
+                Heart
+              </h1>
+              <p class="text-dark lead">
+                Travel Photography agency based in Delhi, IN. <br />We capture
+                moments that turn into memories forever
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item h-100">
+            <img src="./images/hero-2.jpg" class="d-block h-100" style="
+                  width: 100vw;
+                  object-fit: cover;
+                  object-position: center;
+                  filter: brightness(60%);
+                " alt="Couple-Picture" />
+            <div class="carousel-caption w-100">
+              <h1 class="display-4 text-light">
+                Photography for <br />Adventurous Souls & <br />Rebels At
+                Heart
+              </h1>
+              <p class="lead text-light">
+                Travel Photography agency based in Delhi, IN. <br />We capture
+                moments that turn into memories forever
+              </p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section class="about-section">
+      <div class="container">
+        <div class="about-header">
+          <h1 class="about-heading">
+            <span class="about-heading-1">Heart</span>
+            <span class="about-heading-sub-item">
+              <span class="about-heading-2">wedding <br />photography</span>
+              <span class="about-heading-3">string</span>
+            </span>
+          </h1>
+          <p>
+            Welcome to our wedding website! We are thrilled to share our love
+            story and wedding details with you. We hope this site will serve
+            as a helpful resource as you join us in celebrating our special
+            day. We met in college, where we instantly connected over our
+            shared love for adventure and exploring new places.
+          </p>
+
+
+        </div>
+        <div class="parent">
+          <div class="grid_section-a">
+            <img src="./images/grid-section-1.avif" alt="Couple-Picture" />
+          </div>
+          <div class="grid_section-b">
+            <img src="./images/grid-section-3.avif" alt="Couple-Picture" />
+          </div>
+          <div class="grid_section-c">
+            <img src="./images/grid-section-4.avif" alt="Couple-Picture" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonial-section"></section>
+
+    <section class="grid-section">
+      <div class="container grid-container">
+        <div class="gallery-row">
+          <div class="gallery-column gallery-column-1">
+            <div class="gallery-item gallery-item-1">
+              <img src="./images/grid-section-1.avif" alt="Couple-Picture" />
+            </div>
+            <div class="gallery-item gallery-item-2">
+              <img src="./images/grid-section-2.avif" alt="Couple-Picture" />
+            </div>
+          </div>
+          <div class="gallery-column gallery-column-2">
+            <div class="gallery-item gallery-item-2">
+              <img src="./images/grid-section-3.avif" alt="Couple-Picture" />
+            </div>
+            <div class="gallery-item gallery-item-1">
+              <img src="./images/grid-section-4.avif" alt="Couple-Picture" />
+            </div>
+          </div>
+          <div class="gallery-column gallery-column-3">
+            <div class="gallery-item gallery-item-1">
+              <img src="./images/grid-section-2.avif" alt="Couple-Picture" />
+            </div>
+            <div class="gallery-item gallery-item-2">
+              <img src="./images/grid-section-1.avif" alt="Couple-Picture" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer">
+      <div class="row">
+        <a href="#"><i class="fa fa-facebook">WEBSITES</i></a>
+        <a href="#"><i class="fa fa-instagram">DOMAINS</i></a>
+        <a href="#"><i class="fa fa-youtube">ONLINE STORES</i></a>
+        <a href="#"><i class="fa fa-twitter">PROFESSIONAL EMAIL</i></a>
+      </div>
+
+      <div class="row">
+        <ul>
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#">Our Services</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Career</a></li>
+        </ul>
+      </div>
+
+      <div class="row">
+        Copyright © 2021 DINESHGAHLOT - All rights reserved || Designed By: Arpit Dubey
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+
+  <script src="./javascript.js"></script>
+</body>
+
+</html>

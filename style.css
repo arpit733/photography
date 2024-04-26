@@ -1,0 +1,324 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap");
+
+:root {
+  --clr-accent-400: #5677c1;
+
+  --clr-primary-400: #25273c;
+  --clr-primary-500: #161722;
+
+  --clr-neutral-300: #e4e5f1;
+  --clr-neutral-400: #cacde8;
+  --clr-neutral-600: #777a92;
+  --clr-neutral-700: #4d5066;
+  --clr-neutral-800: #393a4c;
+
+  --ff-primary: "DM Serif Display", serif;
+  --ff-secondary: "DM Serif Display", serif;
+
+  --ff-heading: var(--ff-primary);
+  --ff-body: var(--ff-primary);
+  --ff-logo: var(--ff-secondary);
+
+  --fw-regular: 400;
+  --fw-medium: 600;
+  --fw-semibold: 700;
+
+  --fs-100: 14px;
+  --fs-200: 15px;
+  --fs-300: 16px;
+  --fs-400: 18px;
+  --fs-900: 38px;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--ff-heading);
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* HEADER */
+header {
+  /* margin-bottom: 8rem; */
+}
+.navbar {
+  position: relative;
+  z-index: 100;
+}
+.offcanvas {
+  /* z-index: 101; */
+}
+.primary-header .logo {
+  font-family: var(--ff-secondary);
+  color: var(--clr-primary-400);
+  font-size: 28px;
+  text-decoration: none;
+}
+
+.carousel-caption {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.carousel-caption h1 {
+  font-weight: 200 !important;
+  /* letter-spacing: 2px; */
+  line-height: 3.4rem;
+  margin-bottom: 1rem;
+}
+
+/* About Setion */
+
+.about-section {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  background-color: #f1ebe4;
+}
+.about-header {
+  margin-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+@media (min-width: 992px) {
+  .about-header {
+    flex-direction: row;
+  }
+}
+.about-heading {
+  display: flex;
+  flex-direction: column;
+}
+.about-heading-sub-item {
+  display: flex;
+  gap: 1.8rem;
+  align-items: center;
+}
+.about-heading-1 {
+  line-height: 3.8rem;
+  font-size: calc(2.475rem + 2.7vw);
+  text-transform: uppercase;
+}
+.about-heading-2 {
+  text-transform: uppercase;
+
+  font-size: 16px;
+  font-weight: 500;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.about-heading-3 {
+  font-size: calc(2.475rem + 2.7vw);
+  color: rgb(255, 213, 159);
+  text-transform: uppercase;
+}
+.parent {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+.parent img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.grid_section-a {
+  grid-area: 2 / 2 / 7 / 6;
+}
+.grid_section-b {
+  grid-area: 1 / 1 / 5 / 3;
+}
+.grid_section-c {
+  grid-area: 4 / 5 / 8 / 7;
+}
+
+/* Testimonial Section */
+.testimonial-section {
+  margin-bottom: 8rem;
+  min-height: 80vh;
+  background-image: url(https://images.unsplash.com/photo-1491582990992-68ec88e070a3?q=80&w=1631&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.testimonial-row {
+  height: 80vh;
+  color: white;
+}
+.testimonial-col {
+  height: 100%;
+  border: 1px solid red;
+}
+
+/* Grid Section */
+.grid-section {
+  margin-bottom: 8rem;
+}
+.grid-container {
+  --size-small: 240px;
+  --size-large: 400px;
+  --grid-gap: 12px;
+}
+.gallery-row {
+  display: flex;
+  gap: var(--grid-gap);
+}
+.gallery-column {
+  flex-grow: 1;
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--grid-gap);
+}
+.gallery-item {
+  overflow: hidden;
+  border-radius: 4px;
+}
+.gallery-item-1 {
+  height: var(--size-small);
+}
+.gallery-item-2 {
+  height: var(--size-large);
+}
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.footer {
+  background: #1a1a23;
+  padding: 5px 0px;
+  font-family: "Play", sans-serif;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.footer .row {
+  width: 100%;
+  margin: 1% 0%;
+  padding: 0.6% 0%;
+  color: gray;
+  font-size: 0.8em;
+}
+
+.footer .row a {
+  text-decoration: none;
+  color: gray;
+  transition: 0.5s;
+}
+
+.footer .row a:hover {
+  color: #fff;
+}
+
+.footer .row ul {
+  width: 100%;
+}
+
+.footer .row ul li {
+  display: inline-block;
+  margin: 0px 30px;
+}
+
+.footer .row a i {
+  font-size: 2em;
+  margin: 0% 1%;
+}
+
+@media (max-width: 720px) {
+  .footer {
+    text-align: left;
+    padding: 5%;
+  }
+  .footer .row ul li {
+    display: block;
+    margin: 10px 0px;
+    text-align: left;
+  }
+  .footer .row a i {
+    margin: 0% 3%;
+  }
+}
